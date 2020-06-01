@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon');
+@font-face {font-family: "Pokemon";
+            src: url("https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot");
+            src: url("https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg");
+          }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Pokemon', cursive;
 }
 
 body {
-    background: #333;
+    background: #rgb(231, 65, 65);
     line-height: 1.5;
-    font-family: 'Caveat', cursive;
+    font-family: 'Pokemon', cursive;
 }
 
 main {
@@ -20,7 +26,7 @@ main {
 
 main > h1 {
     text-align: center;
-    color: #e4c439;
+    color: yellow;
     margin-bottom: 2rem;
     font-size: 2rem;
     text-transform: uppercase;
@@ -36,8 +42,8 @@ main > h1 {
 
 .card {
     width: 12rem auto;
-    background: #444;
-    color: #e4c439;
+    background: rgba(161, 228, 147, 0.76);
+    color: yellow;
     padding: 1rem;
     border-radius: 10px;
     border-top: 0.5px solid #cebf7b;
