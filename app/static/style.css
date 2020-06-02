@@ -18,7 +18,7 @@
 body {
     background: rgb(251, 55, 55);
     line-height: 1.5;
-    font-family: "Pokemon", serif;
+    font-family: "Pokemon", cursive;
 }
 
 main {
@@ -31,9 +31,19 @@ main > h1 {
     text-align: center;
     color: rgb(231, 229, 36);
     margin-bottom: 2rem;
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 3rem;
+    /*text-transform: uppercase;*/
 }
+
+main > h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    /*text-transform: uppercase;*/
+}
+
+
 
 #app {
     display: grid;
