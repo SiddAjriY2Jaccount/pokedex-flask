@@ -7,21 +7,24 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
         <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <script>
-        window.onload = function() {
-          var context = new AudioContext();
+        document.addEventListener('click', musicPlay);
+        function musicPlay() {
+          document.getElementById("audio-player").play();
+          document.removeEventListener('click', musicPlay);
         }
         </script>
         <title>PokeDex</title>
     </head>
     <body>
         <main>
-          <!--
+
             <audio id="audio-player" autoplay loop>
-              <source src="/static/johto-champ-bgm.mp3" type="audio/mp3">
+              <source src="/assets/johto-champ-bgm.mp3" type="audio/mp3">
             </audio>
 
-          -->
+            <!--
             <iframe src="/static/johto-champ-bgm.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+            -->
             <h1>PokeDex</h1>
             <h3>via PokeAPI</h3>
             <div id="app"></div>
