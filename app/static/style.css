@@ -101,3 +101,12 @@ main > h3 {
     font-size: 1.3rem;
     color: #dbca80;
 }
+
+.fa-play-circle:hover {
+  color: rgb(237, 247, 32);
+  background-color: rgb(40, 53, 224);
+}
+
+#playbtnid:hover {
+  color: rgb(40, 53, 224);
+}
