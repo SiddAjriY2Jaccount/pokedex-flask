@@ -9,17 +9,8 @@
         <!--<script src="https://use.fontawesome.com/2d95d28d6c.js"></script>-->>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-        //document.addEventListener('click', musicPlay);
-        //document.getElementById("playbtn").addEventListener('click', musicPlay);
-        //$(document).ready(function(){
-        //  $("#")
-        //})
-        //function musicPlay() {
-        //  document.getElementById("audio-player").play();
-        //  document.removeEventListener('click', musicPlay);
-        //}
-        </script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <title>PokeDex</title>
     </head>
     <body>
@@ -34,9 +25,11 @@
             -->
 
             <audio src="/static/johto-champ-bgm.mp3" id="audio" loop></audio>
-            <span id="playbtnid" style="float:right">
-              <i class="fa fa-play-circle fa-2x" id="play" onclick="play()"></i>
-            </span>
+            <div id="play-btn" style="float:right">
+              <a class="playbtnid">
+                <i class="fa fa-play-circle fa-2x" id="play" onclick="play()"></i>
+              </a>
+            </div>
 
             <script>
                 function play() {
