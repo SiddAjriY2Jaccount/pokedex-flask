@@ -23,6 +23,7 @@
               <i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>
             </a>
             -->
+          <div id="navbar-top">
 
             <audio src="{{ url_for('static', filename='audio/johto-champ-bgm.mp3') }}" id="audio" loop></audio>
             <div id="play-btn" style="float:right">
@@ -51,7 +52,14 @@
             -->
             <h1>PokeDex</h1>
             <h3>via PokeAPI</h3>
-            <div id="app"></div>
+
+          </div>
+
+            <!-- withing this "app" container we will add our PokeDex entries -->
+            <div id="app">
+               
+            </div>
+
         </main>
     </body>
 </html>
