@@ -23,7 +23,6 @@
               <i class="fa fa-play-circle fa-2x" aria-hidden="true"></i>
             </a>
             -->
-          <div id="navbar-top">
 
             <audio src="{{ url_for('static', filename='audio/johto-champ-bgm.mp3') }}" id="audio" loop></audio>
             <div id="play-btn" style="float:right">
@@ -53,12 +52,16 @@
             <h1>PokeDex</h1>
             <h3>via PokeAPI</h3>
 
-          </div>
-
             <!-- withing this "app" container we will add our PokeDex entries -->
             <div id="app">
-              {%for i in range(1, len(pokedex)+1)%}
-                <div>{{pokedex[i]['name']}}</div>
+              {%for i in range(1, entries)%}
+                <div class="card">
+                  <a href="https://bulbapedia.bulbagarden.net/wiki/{{ pokedex[i]['name'] }}_(Pok%C3%A9mon)">
+                   <img class="card--image" alt="sprite" src="{{ pokedex[i]['img_url'] }}" width="120" height="120">
+                  </a>
+                  <div class="card--name">{{pokedex[i]['name']}}</div>
+                  <div class="card--id">{{pokedex[i]['id']}}</div>
+                </div>
               {%endfor%}
             </div>
 

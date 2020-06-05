@@ -43,8 +43,6 @@ main > h3 {
     /*text-transform: uppercase;*/
 }
 
-
-
 #app {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -55,12 +53,12 @@ main > h3 {
 
 .card {
     width: 12rem auto;
-    background: rgba(161, 228, 147, 0.76);
+    background: rgba(4, 133, 17, 0.6);
     color: rgb(231, 229, 36);
     padding: 1rem;
     border-radius: 10px;
-    border-top: 0.5px solid #cebf7b;
-    border-bottom: 0.5px solid #cebf7b;
+    border-top: 0.5px solid rgba(4, 133, 17, 0.6);
+    border-bottom: 0.5px solid rgba(4, 133, 17, 0.6);
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     position: relative;
@@ -74,11 +72,11 @@ main > h3 {
 }
 
 .card--id {
-    background: #cebf7b;
+    background: rgb(0, 0, 0);
     width: 3rem;
-    color: #333;
+    color: #ffffff;
     padding: 0.1rem;
-    font-weight: 700;
+    font-weight: 200;
     position: absolute;
     border-radius: 0 0 10px 0;
     top: 0;
@@ -87,9 +85,9 @@ main > h3 {
 
 .card--name {
     text-transform: capitalize;
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
+    color: rgb(231, 229, 36);
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 .card--image {
@@ -99,7 +97,7 @@ main > h3 {
 }
 
 .card--details {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     color: #dbca80;
 }
 
