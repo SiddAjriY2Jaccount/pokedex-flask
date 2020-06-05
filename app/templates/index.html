@@ -57,7 +57,9 @@
 
             <!-- withing this "app" container we will add our PokeDex entries -->
             <div id="app">
-               
+              {%for i in range(1, len(pokedex)+1)%}
+                <div>{{pokedex[i]['name']}}</div>
+              {%endfor%}
             </div>
 
         </main>
