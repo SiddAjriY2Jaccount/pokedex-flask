@@ -10,8 +10,8 @@ import os
 pokedex_dict = {}
 
 ## CACHING BY WRITING INTO A FILE
-if os.path.exists("./app/static/cache/api-cache.txt"):
-    f = open("./app/static/cache/api-cache.txt", "r")
+if os.path.exists("api-cache.txt"):
+    f = open("api-cache.txt", "r")
     pokedex_dict = ast.literal_eval(f.read())
 
 else:
@@ -33,7 +33,7 @@ else:
         pokedex_dict[i]['img_url'] = img_url
         pokedex_dict[i]['type'] = type
 
-    f = open("./app/static/cache/api-cache.txt", "w")
+    f = open("api-cache.txt", "w")
     f.write(str(pokedex_dict))
     f.close()
 
