@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="http://db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" />
         <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
         <!--<script src="https://use.fontawesome.com/2d95d28d6c.js"></script>-->>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -54,8 +54,27 @@
 
             <!-- withing this "app" container we will add our PokeDex entries -->
             <div id="app">
+              <!--
+              added extra script tag for holo effect here
+
+              <script>
+                  const holographicElement = document.getElementById("holographic");
+
+                  function updateHolographicBackground(value) {
+                    const percentage = value * 100;
+                    holographicElement.style.backgroundPosition = percentage + "%";
+                  }
+
+                  function handleMouseMove(event) {
+                    const x = event.clientX;
+                    const height = document.documentElement.clientHeight;
+                    const value = x / height;
+                    updateHolographicBackground(value);
+                  }
+              </script>
+              -->
               {%for i in range(1, entries)%}
-                <div class="card">
+                <div class="card" id="holographic" onmousemove="handleMouseMove(event)">
                   <a href="https://bulbapedia.bulbagarden.net/wiki/{{ pokedex[i]['name'] }}_(Pok%C3%A9mon)">
                    <img class="card--image" alt="sprite" src="{{ pokedex[i]['img_url'] }}" width="120" height="120">
                   </a>

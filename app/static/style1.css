@@ -52,6 +52,15 @@
   }
 }
 
+@keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +72,9 @@ body {
     background: rgb(251, 55, 55);
     line-height: 1.5;
     font-family: "Pokemon", cursive;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
 }
 
 main {
@@ -100,6 +112,7 @@ main > h3 {
     background: rgba(4, 133, 17, 0.6);
     color: rgb(231, 229, 36);
     padding: 1rem;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
     border-radius: 10px;
     border-top: 0.5px solid rgba(4, 133, 17, 0.6);
     border-bottom: 0.5px solid rgba(4, 133, 17, 0.6);
@@ -108,7 +121,6 @@ main > h3 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: 0.2s ease-in-out all;
 }
 
 .card:hover {
@@ -130,6 +142,7 @@ main > h3 {
 .card--name {
     text-transform: capitalize;
     color: rgb(231, 229, 36);
+    /*background-color: rgb(1, 71, 61);*/
     font-size: 1.5rem;
     font-weight: 400;
 }
@@ -144,6 +157,20 @@ main > h3 {
     font-size: 0.8rem;
     color: #dbca80;
 }
+
+/*
+#holographic {
+  width: 12rem auto;
+  background-image: linear-gradient(
+    to right,
+    rgb(194, 255, 182),
+    rgb(255, 163, 182),
+    rgb(221, 169, 255),
+    rgb(162, 209, 255)
+  );
+  background-size: 100%;
+}
+*/
 
 .playbtnid i:hover {
     color: rgb(237, 247, 32);
