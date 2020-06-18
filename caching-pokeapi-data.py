@@ -15,7 +15,7 @@ if os.path.exists("api-cache.txt"):
     pokedex_dict = ast.literal_eval(f.read())
 
 else:
-    for i in range(1,152): #All pokemon in Kanto region = 1 (Bulbasaur) to 151 (Mew)
+    for i in range(1,387): #All pokemon in Kanto region = 1 (Bulbasaur) to 386 (Deoxys)
         pokemon = requests.get('https://pokeapi.co/api/v2/pokemon/'+str(i)).json()
         pokedex_dict[i] = {}
         name = pokemon['name']
