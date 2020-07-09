@@ -24,36 +24,42 @@
             </a>
             -->
 
-            <audio src="{{ url_for('static', filename='audio/johto-champ-bgm.mp3') }}" id="audio" loop></audio>
-            <div id="play-btn" style="float:right">
-              <a class="playbtnid">
-                <i class="fa fa-play-circle fa-2x" id="play" onclick="play()"></i>
-              </a>
-            </div>
+            
+            <!-- Added Header and BGM button in nav -->
 
-            <script>
-                function play() {
-                    var audio = document.getElementById('audio');
-                    if (audio.paused) {
-                        audio.play();
-                        $('#play').removeClass('fa-play-circle')
-                        $('#play').addClass('fa-stop-circle')
-                    }else{
-                        audio.pause();
-                        audio.currentTime = 0
-                        $('#play').addClass('fa-play-circle')
-                        $('#play').removeClass('fa-stop-circle')
-                    }
-                }
-            </script>
-            <!--
-            <iframe src="/static/johto-champ-bgm.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
-            -->
-            <h1>PokeDex</h1>
-            <h3>via PokeAPI</h3>
+            <nav class="sticky" id="navbar">
+              <audio src="{{ url_for('static', filename='audio/johto-champ-bgm.mp3') }}" id="audio" loop></audio>
+              <div id="play-btn" style="float:right">
+                <a class="playbtnid">
+                  <i class="fa fa-play-circle fa-2x" id="play" onclick="play()"></i>
+                </a>
+              </div>
 
-            <!-- withing this "app" container we will add our PokeDex entries -->
-            <div id="app">
+              <script>
+                  function play() {
+                      var audio = document.getElementById('audio');
+                      if (audio.paused) {
+                          audio.play();
+                          $('#play').removeClass('fa-play-circle')
+                          $('#play').addClass('fa-stop-circle')
+                      }else{
+                          audio.pause();
+                          audio.currentTime = 0
+                          $('#play').addClass('fa-play-circle')
+                          $('#play').removeClass('fa-stop-circle')
+                      }
+                  }
+              </script>
+              <!--
+              <iframe src="/static/johto-champ-bgm.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+              -->
+              <h1>PokeDex</h1>
+              <h3>via PokeAPI</h3>
+            </nav>
+
+            
+            <!-- within this "app" container we will add our PokeDex entries -->
+            <div id="app" class="content">
               <!--
               added extra script tag for holo effect here
 
