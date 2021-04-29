@@ -1,9 +1,9 @@
 # pokedex-flask
-This repository contains all the files and instructions to get your very own PokeDex up and running using Flask
+This repository contains all the files and instructions to get your very own PokeDex up and running using Flask.
 
 Pre-requisites: python3.6+, pip, venv (recommended)
 
-Demo can be found [here](http://pokedex-flask.herokuapp.com/)
+Demo can be found [here](http://pokedex-flask.herokuapp.com/).
 
 ![image info](./img/preview.png)
 
@@ -17,7 +17,7 @@ Demo can be found [here](http://pokedex-flask.herokuapp.com/)
 ## Querying PokeAPI
 
 - Refer the script `caching-pokeapi-data.py` 
-- It is used to cache data by querying the PokeAPI, thereby reducing load time by eliminating the need to query the API for each Pokemon each time the web app reloads
-- The web app only displays the details of the Pokemon whose details have been cached
-- To change the number of Pokemon to be displayed, simply change the `max_pokemon` value to your desired number 
+- It is used to cache data by querying the PokeAPI, thereby reducing load time by eliminating the need to query the API for each Pokemon each time the web app reloads.
+- The web app only displays the details of the Pokemon whose details have been cached.
+- To change the number of Pokemon to be displayed, simply change the `max_pokemon` value to your desired number. 
 - Finally run: `python3 caching-pokeapi-data.py`
